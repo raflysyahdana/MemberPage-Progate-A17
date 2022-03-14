@@ -1,0 +1,246 @@
+/* tablet 835px */
+@media (max-width: 835px) {
+    #home {
+        background-image: linear-gradient(90deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%), url(../images/bg-home.jpg);
+        background-size: cover;
+        background-position: center;
+        color: rgb(255, 255, 255);
+    }
+
+    nav {
+        background-color: white;
+        box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+    }
+    
+    #home img {
+        display: none;
+    }
+
+    #home .heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    #home p {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    #home span a {
+        font-size: 28px;
+        padding: 20px 40px; 
+    }
+
+    #about .content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #about img {
+        max-width: 60%;
+        margin-bottom: 40px;
+    }
+
+    #about .content.innovative {
+        flex-direction: column;
+    }
+
+    #about .content.innovative img {
+        max-width: 60%;
+    }
+
+    #about .content.innovative .description {
+        padding: 0;
+    }
+
+    #about .description {
+        padding-left: 0;
+    }
+
+    #member {
+        height: 1000px;
+    }
+
+    #member .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #member .card-item {
+        display: none;
+        width: 50%;
+    }
+
+    #member .card-item p {
+        font-size: 1.7em;
+    }
+
+    #member .card-item p:nth-child(3) {
+        font-size: 1.4em;
+        border-bottom: 1px solid #ddd;
+        padding: 0 0 40px;
+        margin: 0 30px;
+    }
+
+    #member .card-item:nth-child(1) {
+        display: block;
+    }
+}
+
+/* tablet 800px */
+@media (max-width: 800px) {
+    .wrapper {
+        padding: 0 50px;
+    }
+
+    nav {
+        line-height: 60px;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        height: 50vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 10px 1rem -10px rgba(0, 0, 0, .1);
+        z-index: -1;
+        width: 40%;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav .logo {
+        font-size: 1.6em;
+    }
+
+    nav ul li a {
+        padding: 20px 40px;
+        font-size: 1.3em;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    #member .card-item p{
+        font-size: 1.5em;
+    }
+
+    #member .card-item p:nth-child(3) {
+        font-size: 1.3em;
+    }
+
+    footer .wrapper{
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-evenly;
+    }
+
+    footer .social {
+        text-align: center;
+    }
+
+}
+
+/* mobile 600px*/
+@media (max-width: 600px) {
+    nav .logo {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: inline-block;
+        text-align: center;
+        height: 330px;
+    }
+
+    nav ul li {
+        margin: 0;
+        height: 80px;
+    }
+
+    #home h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    #home p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #home span a {
+        font-size: 18px;
+        padding: 13px 26px;
+    }
+
+    #about {
+       padding: 100px 50px 0;
+    }
+
+    #about img {
+        max-width: 80%;
+    }
+
+    #about .content.innovative img {
+        max-width: 90%;
+    }
+
+    #about .content .description {
+        font-size: .7em;
+    }
+
+    #member {
+        height: 100vh;
+    }
+
+    #member h2 {
+        font-size: 2em;
+    }
+
+    #member .card-item {
+        width: 70%;
+    }
+
+    #member .card-item p{
+        font-size: 1.2em;
+    }
+
+    #member .card-item p:nth-child(3) {
+        font-size: 1em;
+    }
+
+    #contact h2 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    footer .wrapper h1 {
+        font-size: 2.2em;
+    }
+
+    footer .logo img{
+        max-width: 20%;
+    }
+}
